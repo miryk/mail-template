@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+
+    <style type="text/css">
+      /* reset */
+      #outlook a {
+        padding: 0;
+      } /* Force Outlook to provide a "view in browser" menu link. */
+      .ExternalClass {
+        width: 100%;
+      } /* Force Hotmail to display emails at full width */
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      } /* Forces Hotmail to display normal line spacing.*/
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 0px;
+        line-height: 0px;
+      } /* squash Exact Target injected paragraphs */
+      table td {
+        border-collapse: collapse;
+      } /* Outlook 07, 10 padding issue fix */
+      body {
+        margin: 0;
+        background-color: lightgrey;
+      }
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+      }
+
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        /* background-color: white;  */
+        padding-bottom: 10px;
+      }
+
+      .main {
+        background-color: white;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #171a1b;
+      }
+
+      .head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .banner {
+        height: 200px;
+        width: 100%;
+        background-image: url(/assets/background\ \(2\).jpg);
+        background-position: center;
+        background-size: contain;
+        text-align: center;
+        color: rgb(26, 36, 89);
+        font-weight: bold;
+      }
+
+      .tickets {
+        background-color: orange;
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .banner-footer {
+        height: 70px;
+        width: 100%;
+        background-image: url(/assets/background\ \(2\).jpg);
+        opacity: 60%;
+        background-position: center;
+        background-size: contain;
+        text-align: center;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main" width="100%">
+        <!-- top border -->
+        <tr>
+          <td height="8" style="background-color: #171a1b"></td>
+        </tr>
+        <!-- logo section -->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr class="head">
+                <img src="./assets/favicon-32x32.png" style="display: inline-block; margin-left: 30px; margin-top: 10px; background-color: bisque; padding: 5px; border-radius: 50%;">
+                <span style="font-size: xx-large; font-weight: bold; margin-left: 10px;">Warder</span>
+                <span style="margin-left: 10px;">presents:</span>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="banner">
+            <h2>You are invited to "Event X"</h2>
+            <h4>Here are your X tickets</h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="tickets">
+                  <img src="https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=1234512345&choe=UTF-8" alt='code' style="display: inline-block"/>
+                  <h4>Code: 1234512345</h4>
+                </td>
+              </tr>
+              <tr>
+                <td class="tickets">
+                  <img src="https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=2345678&choe=UTF-8" alt='code' style="display: inline-block"/>
+                  <h4>Code: 2345678</h4>
+                </td>
+              </tr>
+              <tr>
+                <td class="tickets">
+                  <img src="https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=45678134&choe=UTF-8" alt='code' style="display: inline-block"/>
+                  <h4>Code: 45678134</h4>
+                </td>
+              </tr>
+              
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="banner-footer">
+            <h5>Copyright © 2023 Warder, Inc </h5>
+            <table width="100%">
+              <tr style="text-align: center;">
+                <td><a href=""><h6>Questions</h6></a></td>
+                <td><a href=""><h6>Unsuscribe</h6></a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="8" style="background-color: #171a1b"></td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
